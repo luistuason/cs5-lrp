@@ -4,253 +4,392 @@
 <head>
 
     <meta charset="utf-8">
+    <title>CS5 Learning Resource Package</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
 
-    <title>CS5 LRP</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
 
-    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
 
-    <div id="wrapper" class="toggled">
+    <div id="wrapper">
+      <div class="overlay"></div>
 
         <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+            <ul class="nav sidebar-nav">
                 <li class="sidebar-brand">
                     <a href="#">
-                        Computer Science 5
+                        CS5
                     </a>
                 </li>
-                <li>
-                    <a href="#introduction">Introduction</a>
-                </li>
-                <li>
-                    <a href="#review">Review of Programming</a>
-	                <ul>
-	                    	<li>
-	                    <a href="#operators">Operators and Expressions</a>
-	                </li>
-	                <li>
-	                    <a href="#control">Control Structures</a>
-	                </li>
-	                </ul>
-                </li>
-                <li>
-                    <a href="#functions">Functions</a>
-                </li>
-                <li>
-                    <a href="#complex">Complex Data Types</a>
-                </li>
-                <li>
-                    <a href="#string">String Manipulation</a>
-                </li>
-                <li>
-                    <a href="#exception">Exception Handling</a>
-                </li>
-                <li>
-                    <a href="#file">File I/O</a>
-                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"> 1st Quarter <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li>
+                        <a href="#introduction">Introduction</a>
+                    </li>
+                    <li>
+                        <a href="#review" >Review of Programming </a>
+                    </li> 
+                    <li>
+                        <a href="#operators">Operators and Expressions</a>
+                    </li>
+                    <li>
+    	                  <a href="#control">Control Structures</a>
+                    </li>
+                    <li>
+                        <a href="#functions">Functions</a>
+                    </li>
+                    <li>
+                        <a href="#complex">Complex Data Types</a>
+                    </li>
+                    <li>
+                        <a href="#string">String Manipulation</a>
+                    </li>
+                    <li>
+                        <a href="#exception">Exception Handling</a>
+                    </li>
+                    <li>
+                        <a href="#file">File I/O</a>
+                    </li>
+                  </ul>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"> 2nd Quarter <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li>
+                        <a href="#aoa">Analysis of Algorithms</a>
+                    </li>
+                    <li>
+                        <a href="#bon" >Big O Notation </a>
+                    </li> 
+                    <li>
+                        <a href="#searcha">Search Algorithms</a>
+                    </li>
+                    <li>
+                        <a href="#rec">Recursion</a>
+                    </li>
+                    <li>
+                        <a href="#dp">Dynamic Programming</a>
+                    </li>
+                    <li>
+                        <a href="#sorta">Sorting Algorithms</a>
+                    </li>
+                    <li>
+                        <a href="#fds">Fundamental Data Structures</a>
+                    </li>
+                  </ul>
                 <li>
                 	<a href="#about">About</a>
                 </li>
             </ul>
-        </div>
+        </nav>
         <!-- /#sidebar-wrapper -->
 
         <!-- Page Content -->
         <div id="page-content-wrapper">
-            <div class="container-fluid">
-                <h1><b>Computer Science 5</b></h1>
-                <h2>Data Structures and Algorithms</h2>
-                <hr>
-                <p>The purpose of this course is to provide the students with solid foundations in the basic concepts of data structures and algorithms. The main objective of the course is to teach the students how to select and design data structures and algorithms that are appropriate for problems that they might encounter in real life. The course also aims to teach concepts in software engineering that will give the students experience in collaborating with each other through project management.</p>
-                <img src="img/header.png" align="middle" class="img-responsive" alt="">
-                <hr>
-                <!-- <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Toggle Menu</a> -->
+          <button type="button" class="hamburger is-closed animated fadeInLeft" data-toggle="offcanvas">
+            <span class="hamb-top"></span>
+            <span class="hamb-middle"></span>
+            <span class="hamb-bottom"></span>
+          </button>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                  <div class="container-fluid" id="csheader">
+                    <h1 class="page-header">Computer Science 5 Learning Resource Package</h1>
+                    <p class="lead">authored by CS5 C Orange.</p>
+                    <h2>Data Structures and Algorithms</h2>
+                    <hr>
+                    <p>The purpose of this course is to provide the students with solid foundations in the basic concepts of data structures and algorithms. The main objective of the course is to teach the students how to select and design data structures and algorithms that are appropriate for problems that they might encounter in real life. The course also aims to teach concepts in software engineering that will give the students experience in collaborating with each other through project management.</p>
+                    <hr>
+                  </div>
+                  <div class="container-fluid" id="introduction">
+                  	<h2><b>Introduction</b></h2>
+                  	<br>
+                  	<h3>Importance of Software Engineering</h3>
+                  	<br><p>• Software Engineering is the development and maintenance of reliable and efficient software systems
+                  	<br>• It is the integration of Mathematics, Computer Science, and engineering practices</p>
+                  	<h4>Software Engineering as part of the CS5 Curriculum</h4>
+                  	<p>		• Both require a foundation in programming fundamentals and basic computer science theory<br>
+                  			• SE: software development, design, and testing; goes beyond programming to include such things as assessing customer needs<br>
+                  			• CS: keep the core small and then expect students to choose among more advanced courses (such as systems, networking, database, artificial intelligence, theory, etc.)
+                 		<hr>
+                 		<h2><b>Python 3 Installation</b></h2>
+                 		<p>Just go to <a target="_blank" href="https://www.python.org/downloads/">https://www.python.org/downloads/</a><br>
+                 		Seriously, it's that simple. With a stable internet connection, it'll only take you a minute or two.</p>
+                 		<hr>
+                 	</div>
+                 	<div class="container-fluid" id="review">
+                 		<h2><b>Review of Programming</b></h2>
+                 		<br>
+                 		<h3>Variables</h3>
+                 		<p>• Elements of programming that allow the user and the program to store values<br>
+                 		• Can be assigned a data type</p>
+                 		<h3>Data Types</h3>
+                 		<p>• Classification of a variable<br>
+                 			• Not synonymous with a Class<br>
+                 			• Determines what operations can be used on it</p>
+                 		<h3>Control Structures</h3>
+                 		<p>• Accepts input and processes data<br>
+                 			• Returns an output in the form of a variable or value<br>
+                 		• Primary building blocks of code</p>
+                 		<hr>
+                 	</div>
+                 	<div class="container-fluid" id="operators">
+                  	<h2><b>Operators and Expressions</b></h2>
+                  	<img src="img/operators.png"/>
+                  	<br>
+                  	<h3><b>+</b></h3>
+                  	<p>• Addition<br>
+                  	• May be used for numeric data types and strings</p>
+                 		<h3><b>-</b></h3>
+                 		<p>• Subtraction</p>
+                 		<h3><b>*</b></h3>
+                 		<p>• Multiplication<br>
+                 			May be used for string*int -- e.g. 'Ram'*2 >> 'RamRam'</p>
+                 		<h3><b>**</b></h3>
+                 		<p>• Exponentiation</p>
+                 		<h3><b>/</b></h3>
+                 		<p>• Division</p>
+                 		<h3><b>%</b></h3>
+                 		<p>• Modulo</p>
+                 		<h3><b>//</b></h3>
+                 		<p>• Integer Division</p>
+                 		<h3><b>=</b></h3>
+                 		<p>• Assignment operator</p>
+                 	</div>
+                 	<div class="container-fluid" id="control">
+                  	<h2><b>Control Structures</b></h2>
+                  	<br>
+                  	<img src="img/control.png"/>
+                 		<hr>
+                 	</div>
+                 	<div class="container-fluid" id="functions">
+                  	<h2><b>Functions</b></h2>
+                  	<br>
+                  	<h3>In Python</h3>
+                  	<code>
+                  		def function_name ([parameter list]):<br>
+              			&nbsp;&nbsp;&nbsp;&nbsp;[code block]
+                  	</code>
+                  	<p>Parameter list is dynamic</p>
+                  	<p>Example</p>
+                  	<code>
+                  		def is_leap_year(year):<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;‘’’<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Returns True if the value provided is a leap year.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;‘’’<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;#isLeapYear in camel-case<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;#divisible by 4<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;#not divisible by 100 unless divisible by 400<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;if year % 400 = 0:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    return True<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;if year % 100 == 0:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    return False<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;if year % 4 == 0:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    return True<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;return False
+
+                  	</code>
+
+                 		<hr>
+                 	</div>
+                 	<div class="container-fluid" id="complex">
+                  	<h2><b>Complex Data Types</b></h2>
+                  	<img src="img/complex.png" width="30%" />
+                  	<br>
+                  	<h4>List [ ]</h4>
+                  	<p>• <b>Not homogeneous</b> - each list can contain different data types</p>
+                  	<h4>Set { }</h4>
+                  	<p>• Order is not relevant<br>
+                  	• If there are duplicates of an element, it only registers once</p>
+                  	<h4>Tuple ( )</h4>
+                  	<p>• Same as list but <b>immutable</b> data type - cannot be changed</p>
+                  	<h4>Dict { : }</h4>
+                  	<p>• {key : value} pairs</p>
+                  	<h4>Range</h4>
+                  	<p>• Linear set<br>
+                  		i.e. range(0, 10) -- 0 1 2 3 4 5 6 7 8 9
+                 		<hr>
+                 	</div>
+                 	<div class="container-fluid" id="string">
+                  	<h2><b>String Manipulation</b></h2>
+                  	<br>
+                    <h4>Syntax</h4>
+                    >><code>name = 'Luis'</code>
+                    <h4>Strings as a sequence of chars</h4>
+                    >><code>name[0]<br>'L'</code><br>
+                    >><code>name[1:3]<br>'ui'</code>
+                    <h4>String Slicing</h4>
+                    <p>• 0 → n OR n ← -1<br>
+                      •<code>name[n:]</code>&nbsp;&nbsp; → from n element to the end<br>
+                      •<code>name[:n]</code>&nbsp;&nbsp; → from start until n-1 element<br>
+                      •<code>name[x:y]</code> → from x to y-1 element</p>
+                 	<hr>
+                 	</div>
+                 	<div class="container-fluid" id="exception">
+                  	<h2><b>Exception Handling</b></h2>
+                  	<br>
+                  	<h4>Try</h4>
+                  	<p>• Statements which are executed while no exceptions occur</p>
+                  	<h4>Except</h4>
+                  	<p>• If exception occurs, the rest of try clause is skipped, then execution continues</p>
+                  	<h4>Finally</h4>
+                  	<p>• Always executed in the end, no matter what</p>
+                  	<br>
+                  	<h4>Examples of Erros</h4>
+                  	<p>• TypeError - raised when operation/function applied to an object of inappropriate type<br>
+                  		• ValueError - raised when argument is the right type but the wrong value<br>
+                  	• ZeroDivisionError - raised when argument of a division is zero</p> 
+                 		<hr>
+                 	</div>
+                 	<div class="container-fluid" id="file">
+                  	<h2><b>File Input/Output</b></h2>
+                  	<br>
+                  	<h4>Open a file</h4>
+                  	<p>• <code>objectName = open(fileName[, access_mode])</code><br>
+                  		&nbsp;&nbsp;&nbsp;&nbsp;• <code>'w'</code> - for writing<br>
+                  		&nbsp;&nbsp;&nbsp;&nbsp;• <code>'r'</code> - for reading</p>
+                  	<h4>Close file</h4>
+                  	<p>• <code>objectName.close()</code></p>
+                  	<h4>Write to file</h4>
+                  	<p>• <code>objectName.write('insert string here')</code></p>
+                  	<h4>Read a file</h4>
+                  	<p>• <code>objectName.read([count])</code></p>
+                  	&nbsp;&nbsp;&nbsp;&nbsp;• count - number of bytes to be read; default: until EOF<br>
+                 		<hr>
+                 	</div>
+                  <div class="container-fluid" id="aoa">
+                    <h2><b>Analysis of Algorithms</b></h2>
+                    <p>*greedy algorithms - not necessarily optimal<br>
+                      *adversarial algorithms - take note of other algorithms’ behavior</p><br>
+                                          <p>Considerations:<br>
+                      &nbsp;1. Space complexity<br>
+                      &nbsp;- Measures how much memory is used as input grows <br>
+                      &nbsp;2. Time complexity<br>
+                      &nbsp;- Measures how much time is taken for to run operations as input grows
+                    </p>
+                    <hr>
+                  </div>
+                  <div class="container-fluid" id="bon">
+                    <h2><b>Big O Notation</b></h2>
+                    <p>-Notation of complexity<br>
+                    - In terms of <i>growth of operations</i> as the <i>number of elements</i> increase:<br>
+                    O(n!) > O(2n) > O(n2) > O(n log2n) > O(n) > O(log2n) > O(1)<br>In other words:<br>
+                    <i>Factorial complexities grow fastest (considered “worst”), while constant complexities grow least (considered “best”).
+                    </i></p>
+                    <p>
+                    Examples:<br>
+                    &nbsp;&nbsp;- Quicksort has a time complexity of O(n2) and space complexity of O(log2n)<br>
+                    &nbsp;&nbsp;- Merge sort has a time complexity O(n log2n) and space complexity O(n)<br>
+                    &nbsp;&nbsp;- Bubble sort has a time complexity O(n2) and space complexity O(1)<br>
+                    &nbsp;&nbsp;- Bucket sort has a time complexity O(n2) and space complexity O(n)<br>
+                    </p>
+                    <hr>
+                  </div>
+                  <div class="container-fluid" id="searcha">
+                    <h2><b>Search Algorithms</b></h2>
+                      <h4>Linear Search</h4>
+                      <p>- This searches items one by one and if a match is found, that particular item is returned, otherwise the linear search continues until the end of the data set.</p>
+                      <p>- The time it takes for this search to run is characterized by  O(n).</p>
+                      <h4>Binary Search</h4>
+                      <p>- This searches a sorted array by repeatedly dividing the search interval in half. If the value to be searched is less than the value of the item in the middle of the interval, the lower half is then searched and further divided into two. On the other hand, if the value to be searched is more than the value of the item in the middle of the interval, the upper half is then searched and further divided into two. Lastly, if the value is equal to the value of the item in the middle of the interval, then that particular item is returned.</p>
+                      <p>- The time it takes for this search to run is characterized by  O(log(n)).</p>
+                    <hr>
+                  </div>
+                  <div class="container-fluid" id="rec">
+                    <h2><b>Recursion</b></h2>
+                    <p>Recursion or a recursive call occurs when a method being called is the same as the method that is making the call.</p>
+                    <h4>Base Case</h4>
+                    <p>- The case for which the solution can be stated non-recursively.</p>
+                    <h4>Recursive Cases</h4>
+                    <p>- The case for which the solution is expressed in terms of a smaller version of itself.</p>
+                    <p>---</p>
+                    <p>- Recursive solutions can be less efficient than iterative solutions.</p>
+                    <p>- Still, there are many problems that can be solved through simple and elegant recursive solutions. </p>
+                    <hr>
+                  </div>
+                  <div class="container-fluid" id="dp">
+                    <h2><b>Dynamic Programming</b></h2>
+
+                    <hr>
+                  </div>
+                  <div class="container-fluid" id="sorta">
+                    <h2><b>Sorting Algorithms</b></h2>
+                      <h4>Bubble Sort</h4>
+                      <p>- the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in wrong order.</p>
+                      <h4>Insertion Sort</h4>
+                      <p>The selection sort algorithm sorts an array by repeatedly finding the minimum element (considering ascending order) from unsorted part and putting it at the beginning. The algorithm maintains two subarrays in a given array.<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;1) The subarray which is already sorted.<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;2) Remaining subarray which is unsorted.<br>
+                      In every iteration of selection sort, the minimum element (considering ascending order) from the unsorted subarray is picked and moved to the sorted subarray.</p>
+                      <h4>Selection Sort</h4>
+                      <p>For i in range(n)<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;For j in range(-n, 0):<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If array[i] < array[j]:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Place array[i] before array[j]<br><br>
+                        - Similar to sorting cards on one hand
+
+                      </p>
+                      <h4>Merge Sort</h4>
+                      <p>- a divide and conquer algorithm</p>
+                      <p>-  It divides input array in two halves, calls itself for the two halves and then merges the two sorted halves. The merge() function is used for merging two halves. The merge(arr, l, m, r) is key process that assumes that arr[l..m] and arr[m+1..r] are sorted and merges the two sorted sub-arrays into one.</p>
+                      <h4>Quick Sort</h4>
+                      <p>- also a divide and conquer algorithm</p>
+                      <p>It picks an element as pivot and partitions the given array around the picked pivot. There are many different versions of quickSort that pick pivot in different ways.<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;- Always pick first element as pivot.<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;- Always pick last element as pivot.<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;- Pick a random element as pivot.<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;- Pick median as pivot.<br>
+                        </p>
+                        <p>- The key process in quickSort is partition(). Target of partitions is, given an array and an element x of array as pivot, put x at its correct position in sorted array and put all smaller elements (smaller than x) before x, and put all greater elements (greater than x) after x. All this should be done in linear time.</p>
+                      <h4>Bogo Sort</h4>
+                      <p>- BogoSort also known as permutation sort, stupid sort, slow sort, shotgun sort or monkey sort is a particularly ineffective algorithm based on generate and test paradigm. The algorithm successively generates permutations of its input until it finds one that is sorted.</p>
+                      <p>- For example, if bogosort is used to sort a deck of cards, it would consist of checking if the deck were in order, and if it were not, one would throw the deck into the air, pick the cards up at random, and repeat the process until the deck is sorted.
+</p>
+                      <h4>Counting Sort</h4>
+                      <p><a href="https://en.wikipedia.org/wiki/Counting_sort" target="_blank">https://en.wikipedia.org/wiki/Counting_sort</a><br>
+                        Best: Ω(n+k)<br>
+                        Average: Θ(n+k)<br>
+                        Worst: O(n+k)
+                        <br>*in progress*
+</p>
+                    <hr>
+                  </div>
+                  <div class="container-fluid" id="fds">
+                    <h2><b>Fundamental Data Structures</b></h2>
+                      *in progress*
+                    <hr>
+                  </div>
+
+
+
+                  <hr>
+                 	<div class="container-fluid" id="about">
+                  	<br><br><br><h2><b>About</b></h2>
+                  	<br>
+                  	<h4>This version of the Learning Resource Package for CS5 was created by the <span style="color:#FFA500""><b>Orange</b></span> Group of CS5C composed of 
+                  	Tuason, Claveria, Borja, Cruz, Quinzon, Cauilan and Pagdanganan</h4>
+                 		<hr>
+                 		<p>This website is still under development. It will be improved over the course of the academic year of 2017-2018</p>
+                 	</div>
+                </div>
+              </div>
             </div>
-            <div class="container-fluid" id="introduction">
-            	<h2><b>Introduction</b></h2>
-            	<br>
-            	<h3>Importance of Software Engineering</h3>
-            	<br><p>• Software Engineering is the development and maintenance of reliable and efficient software systems
-            	<br>• It is the integration of Mathematics, Computer Science, and engineering practices</p>
-            	<h4>Software Engineering as part of the CS5 Curriculum</h4>
-            	<p>		• Both require a foundation in programming fundamentals and basic computer science theory<br>
-            			• SE: software development, design, and testing; goes beyond programming to include such things as assessing customer needs<br>
-            			• CS: keep the core small and then expect students to choose among more advanced courses (such as systems, networking, database, artificial intelligence, theory, etc.)
-           		<hr>
-           		<h2><b>Python 3 Installation</b></h2>
-           		<p>Just go to <a target="_blank" href="https://www.python.org/downloads/">https://www.python.org/downloads/</a><br>
-           		Seriously, it's that simple. With a stable internet connection, it'll only take you a minute or two.</p>
-           		<hr>
-           	</div>
-           	<div class="container-fluid" id="review">
-           		<h2><b>Review of Programming</b></h2>
-           		<br>
-           		<h3>Variables</h3>
-           		<p>• Elements of programming that allow the user and the program to store values<br>
-           		• Can be assigned a data type</p>
-           		<h3>Data Types</h3>
-           		<p>• Classification of a variable<br>
-           			• Not synonymous with a Class<br>
-           			• Determines what operations can be used on it</p>
-           		<h3>Control Structures</h3>
-           		<p>• Accepts input and processes data<br>
-           			• Returns an output in the form of a variable or value<br>
-           		• Primary building blocks of code</p>
-           		<hr>
-
-           	</div>
-           	<div class="container-fluid" id="operators">
-            	<h2><b>Operators and Expressions</b></h2>
-            	<img src="img/operators.png"/>
-            	<br>
-            	<h3><b>+</b></h3>
-            	<p>• Addition<br>
-            	• May be used for numeric data types and strings</p>
-           		<h3><b>-</b></h3>
-           		<p>• Subtraction</p>
-           		<h3><b>*</b></h3>
-           		<p>• Multiplication<br>
-           			May be used for string*int -- e.g. 'Ram'*2 >> 'RamRam'</p>
-           		<h3><b>**</b></h3>
-           		<p>• Exponentiation</p>
-           		<h3><b>/</b></h3>
-           		<p>• Division</p>
-           		<h3><b>%</b></h3>
-           		<p>• Modulo</p>
-           		<h3><b>//</b></h3>
-           		<p>• Integer Division</p>
-           		<h3><b>=</b></h3>
-           		<p>• Assignment operator</p>
-           	</div>
-           	<div class="container-fluid" id="control">
-            	<h2><b>Control Structures</b></h2>
-            	<br>
-            	<img src="img/control.png"/>
-           		<hr>
-           	</div>
-           	<div class="container-fluid" id="functions">
-            	<h2><b>Functions</b></h2>
-            	<br>
-            	<h3>In Python</h3>
-            	<code>
-            		def function_name ([parameter list]):<br>
-        			&nbsp;&nbsp;&nbsp;&nbsp;[code block]
-            	</code>
-            	<p>Parameter list is dynamic</p>
-            	<p>Example</p>
-            	<code>
-            		def is_leap_year(year):<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;‘’’<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;Returns True if the value provided is a leap year.<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;‘’’<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;#isLeapYear in camel-case<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;#divisible by 4<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;#not divisible by 100 unless divisible by 400<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;if year % 400 = 0:<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    return True<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;if year % 100 == 0:<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    return False<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;if year % 4 == 0:<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    return True<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;return False
-
-            	</code>
-
-           		<hr>
-           	</div>
-           	<div class="container-fluid" id="complex">
-            	<h2><b>Complex Data Types</b></h2>
-            	<img src="img/complex.png" width="30%" />
-            	<br>
-            	<h4>List [ ]</h4>
-            	<p>• <b>Not homogeneous</b> - each list can contain different data types</p>
-            	<h4>Set { }</h4>
-            	<p>• Order is not relevant<br>
-            	• If there are duplicates of an element, it only registers once</p>
-            	<h4>Tuple ( )</h4>
-            	<p>• Same as list but <b>immutable</b> data type - cannot be changed</p>
-            	<h4>Dict { : }</h4>
-            	<p>• {key : value} pairs</p>
-            	<h4>Range</h4>
-            	<p>• Linear set<br>
-            		i.e. range(0, 10) -- 0 1 2 3 4 5 6 7 8 9
-           		<hr>
-           	</div>
-           	<div class="container-fluid" id="string">
-            	<h2><b>String Manipulation</b></h2>
-            	<br>
-              <h4>Syntax</h4>
-              >><code>name = 'Luis'</code>
-              <h4>Strings as a sequence of chars</h4>
-              >><code>name[0]<br>'L'</code><br>
-              >><code>name[1:3]<br>'ui'</code>
-              <h4>String Slicing</h4>
-              <p>• 0 → n OR n ← -1<br>
-                •<code>name[n:]</code>&nbsp;&nbsp; → from n element to the end<br>
-                •<code>name[:n]</code>&nbsp;&nbsp; → from start until n-1 element<br>
-                •<code>name[x:y]</code> → from x to y-1 element</p>
-           	<hr>
-           	</div>
-           	<div class="container-fluid" id="exception">
-            	<h2><b>Exception Handling</b></h2>
-            	<br>
-            	<h4>Try</h4>
-            	<p>• Statements which are executed while no exceptions occur</p>
-            	<h4>Except</h4>
-            	<p>• If exception occurs, the rest of try clause is skipped, then execution continues</p>
-            	<h4>Finally</h4>
-            	<p>• Always executed in the end, no matter what</p>
-            	<br>
-            	<h4>Examples of Erros</h4>
-            	<p>• TypeError - raised when operation/function applied to an object of inappropriate type<br>
-            		• ValueError - raised when argument is the right type but the wrong value<br>
-            	• ZeroDivisionError - raised when argument of a division is zero</p> 
-           		<hr>
-           	</div>
-           	<div class="container-fluid" id="file">
-            	<h2><b>File Input/Output</b></h2>
-            	<br>
-            	<h4>Open a file</h4>
-            	<p>• <code>objectName = open(fileName[, access_mode])</code><br>
-            		&nbsp;&nbsp;&nbsp;&nbsp;• <code>'w'</code> - for writing<br>
-            		&nbsp;&nbsp;&nbsp;&nbsp;• <code>'r'</code> - for reading</p>
-            	<h4>Close file</h4>
-            	<p>• <code>objectName.close()</code></p>
-            	<h4>Write to file</h4>
-            	<p>• <code>objectName.write('insert string here')</code></p>
-            	<h4>Read a file</h4>
-            	<p>• <code>objectName.read([count])</code></p>
-            	&nbsp;&nbsp;&nbsp;&nbsp;• count - number of bytes to be read; default: until EOF<br>
-           		<hr>
-           	</div>
-           	<div class="container-fluid" id="about">
-            	<br><br><br><h2><b>About</b></h2>
-            	<br>
-            	<h4>This version of the Learning Resource Package for CS5 was created by the <span style="color:#FFA500""><b>Orange</b></span> Group of CS5C composed of 
-            	Tuason, Claveria, Borja, Cruz, Quinzon, Cauilan and Pagdanganan</h4>
-           		<hr>
-           		<p>This website is still under development. It will be improved over the course of the academic year of 2017-2018
-           	</div>
-        </div>
         <!-- /#page-content-wrapper -->
 
     </div>
     <!-- /#wrapper -->
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/popper/popper.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script  src="js/index.js"></script>
 
 </body>
 </html>
